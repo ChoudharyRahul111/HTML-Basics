@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Componant Library</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <h1> Welcome to Rahul Choudhary Componant Library </h1>
@@ -21,17 +22,19 @@
     <hr>
 
     <h2>@Container</h2>
+
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container container-fluid">This is a fluid container and it will go till the end of the page</div>
 
     <h3>Center container</h3>
-    <div>This is a centerd container and it will go till the specified width</div>
+    <div class="container container-center">This is a centerd container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Promary Link</a>
-    <a href="/">Secondary Link</a>
+
+    <a class="link-primary-link" href="/">Promary Link</a>
+    <a class="link-secondary-link" href="/">Secondary Link</a>
 
     <hr>
 
@@ -39,11 +42,10 @@
 
     <h3>unorderd lists</h3>
 
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-        <li>Item Four</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Item One</li>
+        <li class="list-item-inline">Item Two</li>
+        <li class="list-item-inline">Item Three</li>
     </ul>
 
     <h3>unorder inline lists</h3>
@@ -52,7 +54,6 @@
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
-        <li>Item Four</li>
     </ul>
 
 
@@ -69,17 +70,17 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>IAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">IAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Products</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Products</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
             </li>
         </ul>
     </nav>
@@ -88,23 +89,28 @@
 
 
     <h2>@header</h2>
-    <header>
-        <img src="Images/Img01.png" alt="">
-        <h1>heading inside header</h1>
+
+    <header class="hero">
+        <img class="hero-img" src="Images/Img01.png" alt="">
+        <h1 class="hero-heading">Adarsh balikan the <span class="heading-invert">Web developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
 
-    <section>
-        <h3>white section</h3>
-        <p>This will have white backgorund</p>
+    <section class="section">
+        <div class="container-center">
+            <h1>white section</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam rem fuga autem, voluptatem aut velit recusandae? Delectus dolorem vero numquam consequatur! Unde, cum modi exercitationem voluptas ducimus sit quam harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet saepe voluptatem harum quos, iusto commodi, laboriosam labore sapiente necessitatibus fuga ipsam suscipit cum! Quo illum dolorem voluptatum nesciunt molestias placeat?</p>
+        </div>
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray backgorund</p>
+    <section class="section ow">
+        <div class="container-center">
+            <h1>off white section</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam rem fuga autem, voluptatem aut velit recusandae? Delectus dolorem vero numquam consequatur! Unde, cum modi exercitationem voluptas ducimus sit quam harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet saepe voluptatem harum quos, iusto commodi, laboriosam labore sapiente necessitatibus fuga ipsam suscipit cum! Quo illum dolorem voluptatum nesciunt molestias placeat?</p>
+        </div>
     </section>
 
 
@@ -112,12 +118,18 @@
 
     <h2>footer</h2>
 
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialtwo</li>
-            <li>socialthree</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-link list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">Socialone</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Socialtwo</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Socialthree</a>
+            </li>
         </ul>
     </footer>
 
